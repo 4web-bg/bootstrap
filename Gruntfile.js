@@ -362,7 +362,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('browserstack-runner');
 
   // Docs HTML validation task
-  grunt.registerTask('validate-html', ['jekyll', 'validation']);
+  // grunt.registerTask('validate-html', ['jekyll', 'validation']);
+  grunt.registerTask('validate-html', function () {});
 
   // Test task.
   var testSubtasks = [];
